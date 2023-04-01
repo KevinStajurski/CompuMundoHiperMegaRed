@@ -1,0 +1,13 @@
+.NavBar {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+    height: 50px;
+    overflow: hidden;
+}
+
+.Logo {
+    width: 200px;
+}

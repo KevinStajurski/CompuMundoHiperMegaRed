@@ -1,0 +1,12 @@
+.cantidadCarrito {
+    color: white;
+    font-size: 20px;
+}
+
+.logoCarrito {
+    height: 50px;
+}
+
+.divCart {
+    display: flex;
+}
