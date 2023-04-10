@@ -1,10 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./ItemListContainer.css"
+import data from "../../data/productos.json"
+import ItemList from '../../ItemList/ItemList'
 
-export const ItemListContainer = (props) => {
+export const ItemListContainer = () => {
+    const [productos,setProductos] = useState([])
+    const pedirProductos = () => {
+        return new Promise((resolve,reject) => {
+            resolve(data)
+        })
+    }
+
+    useEffect(() => {
+        pedirProductos ()
+        .then((res) => {
+            setProductos(res)
+        })
+    },[])
+
     return (
-        <div className='divItemListContainer'>
-            <h1>{props.greeting}</h1>
-        </div>
+        <ItemList productos={productos}/>
     )
 }

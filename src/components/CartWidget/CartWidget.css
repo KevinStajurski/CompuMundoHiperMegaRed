@@ -9,4 +9,11 @@
 
 .divCart {
     display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cartIcon {
+    color: white;
+    font-size: 2rem;
 }

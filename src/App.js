@@ -9,7 +9,7 @@ function App() {
       <NavBar>
         <CartWidget/>
       </NavBar>
-      <ItemListContainer greeting="Bienvenido a CompuMundoHiperMegaRed, esta industria avanza tan rápido que es dificil saber!"/>
+      <ItemListContainer/>
     </div>
   );
 }

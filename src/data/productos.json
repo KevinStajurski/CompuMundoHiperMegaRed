@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "APPLE IPHONE 13",
+        "image": "https://medias.musimundo.com/medias/00482031-145023-145023-01-145023-01.jpg-size515?context=bWFzdGVyfGltYWdlc3wzOTg0N3xpbWFnZS9qcGVnfGg5OS9oZDgvMTAzODEyNTk1NzEyMzAvMDA0ODIwMzEtMTQ1MDIzLTE0NTAyM18wMS0xNDUwMjNfMDEuanBnX3NpemU1MTV8NjEzN2FiNDNjYzE3NjRkNmY1ODYwZjVmOTNkMjY4MzUyY2E2N2JiNDJiZDExODNhYTVlODUwOGU2YWIyNTk3Mg",
+        "price": 651899,
+        "description": "Celular de 6.1 pulgadas OLED. Procesador Chip A15 Bionic. Almacenamiento 256Gb / RAM 4 Gb. Camara frontal 12Mp / trasera 12Mp. NFC. USB-C. Bluetooth 5.0. Sistema operativo iOS 15. WiFi 802.11ax (6tagen.) con MIMO2x2. Radio. Graba y reproduce video. GPS. Navegador: Chrome. Un gran salto en la duracion de la bateria. Pantalla Super Retina XDR. Diseno resistente con ceramic shield. Mejores fotos y videos con poca luz. Modo cine con baja profundidad de campo y cambios de enfoque automaticos."
+    },
+    {
+        "id": 2,
+        "title": "SAMSUNG S23 ULTRA",
+        "image": "https://medias.musimundo.com/medias/size515-148065-02.jpg?context=bWFzdGVyfGltYWdlc3wzMTUwM3xpbWFnZS9qcGVnfGhmNS9oZGEvMTA0NjYyNDgyMjg4OTQvc2l6ZTUxNV8xNDgwNjVfMDIuanBnfDAzODg3NDY0MTBlODg2MmQ1ZGQ1MjY4Y2E4MmRmNDRhMTM1MDU0NjkwNGRkZDU0NzYxMTUzNTFlYTFlYjk2Y2M",
+        "price": 485999,
+        "description": "Celular. Pantalla 6.8 FHD+ Dynamic AMOLED 16M colores. Almacenamiento: 256 Gb. Memoria RAM: 8 Gb. Camara Posterior: 200 MP + 10 MP + 12 MP. Camara Frontal: 12 MP. Bateria: 5000mAh. Puerto USB. Sincronizacion de PC. Identificador de llamadas. GPS. Glonass. Beidou. Sensor acelerometro. Sensor de huellas dactilares. Sensor giroscopico. Sensor geomagnetico. Sala de sensores. Sensor de luz. Sensor de proximidad. Mensajes de voz. Alarma. Reloj. Reproductor multimedia. Calculadora. Agenda. Correo electronico. Sonidos polifonicos."
+    },
+    {
+        "id": 3,
+        "title": "MOTOROLA EDGE 30",
+        "image": "https://medias.musimundo.com/medias/00559004-146602-146602-01-146602-01.jpg-size515?context=bWFzdGVyfGltYWdlc3w1ODc3MHxpbWFnZS9qcGVnfGg4Ny9oY2IvMTA0MTM0NTA3ODg4OTQvMDA1NTkwMDQtMTQ2NjAyLTE0NjYwMl8wMS0xNDY2MDJfMDEuanBnX3NpemU1MTV8MzIyNWNkM2Y0ZDhiOTI4NjUzZjk5Y2JkM2I4ZTZhZTgwN2MwMWZkOTVkY2RkNDUzZGZiYmYzNzI5YmNhODA1Zg",
+        "price": 129999,
+        "description": "Celular con pantalla de 6.55 pulgadas pOLED. Resolucion 1080 x 2400 FHD+, 402, HiD, 144Hz. Procesador Octa core Qualcomm Snapdragon 778G+ (2.5 GHz). Camara Principal: 50MP (84) F1.8. Gran angular y macro: 13MP (120) F2.2. Profundidad: 2MP (80.1) F2.4. Zoom, digital (8x picture / 6x video). Flash Dual LED / Camara frontal 32Mp. Flash frontal backlight. Capacidad 128 Gb / RAM 8 Gb. Sensores: acelerometro, de proximidad, brujula (campo magnetico), giroscopio, huella dactilar, luz ambiente, desbloqueo facial. Redes Wi Fi 802.11 a/b/g/n/ac/ax/k/v/r/u - WIFI6E, bandas 2,4 , 5 y 6 GHz. Bluetooth 5.2. NFC. GPS, AGPS, GLONASS, Galileo. Redes 5G. Conector USB C version 2.0. Vidrio de pantalla 2.5D. Bateria 4020 mAh."
+    }
+]
