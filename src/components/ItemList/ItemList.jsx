@@ -1,9 +1,10 @@
 import React from 'react'
-import Item from '../components/Item/Item'
+import Item from '../Item/Item'
+import "./ItemList.css"
 
 export default function ItemList({productos}) {
   return (
-    <div>
+    <div className='DivProd'>
       {
         productos.map ((producto) => {
           return (

@@ -1,10 +1,10 @@
+import "./Item.css"
 const Item = ({producto}) => {
   return(
-    <div>
-      <img src={producto.image} alt={producto.title}/>
+    <div className="Producto">
+      <img src={producto.image} alt={producto.title} className="Img"/>
       <h2>{producto.title}</h2>
       <p>$ {producto.price}</p>
-      <p>{producto.description}</p>
     </div>
   )
 }
