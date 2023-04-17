@@ -1,17 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import "./ItemListContainer.css"
-import data from "../../data/productos.json"
 import {ItemList} from '../ItemList/ItemList'
+import {pedirProductos} from '../pedirProductos'
 
 export const ItemListContainer = () => {
     const [productos,setProductos] = useState([])
-    const pedirProductos = () => {
-        return new Promise((resolve,reject) => {
-            setTimeout( () => {
-                resolve(data)
-                }, 2000)
-        })
-    }
 
     useEffect(() => {
         pedirProductos ()
