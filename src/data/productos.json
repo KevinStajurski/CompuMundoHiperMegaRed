@@ -1,30 +1,47 @@
 [
     {
-        "id": 1,
+        "id": 0,
         "title": "APPLE IPHONE 13",
         "image": "https://medias.musimundo.com/medias/00482031-145023-145023-01-145023-01.jpg-size515?context=bWFzdGVyfGltYWdlc3wzOTg0N3xpbWFnZS9qcGVnfGg5OS9oZDgvMTAzODEyNTk1NzEyMzAvMDA0ODIwMzEtMTQ1MDIzLTE0NTAyM18wMS0xNDUwMjNfMDEuanBnX3NpemU1MTV8NjEzN2FiNDNjYzE3NjRkNmY1ODYwZjVmOTNkMjY4MzUyY2E2N2JiNDJiZDExODNhYTVlODUwOGU2YWIyNTk3Mg",
         "price": 651899,
-        "description": "Celular de 6.1 pulgadas OLED. Procesador Chip A15 Bionic. Almacenamiento 256Gb / RAM 4 Gb. Camara frontal 12Mp / trasera 12Mp. NFC. USB-C. Bluetooth 5.0. Sistema operativo iOS 15. WiFi 802.11ax (6tagen.) con MIMO2x2. Radio. Graba y reproduce video. GPS. Navegador: Chrome. Un gran salto en la duracion de la bateria. Pantalla Super Retina XDR. Diseno resistente con ceramic shield. Mejores fotos y videos con poca luz. Modo cine con baja profundidad de campo y cambios de enfoque automaticos."
+        "description": "Celular de 6.1 pulgadas OLED. Procesador Chip A15 Bionic. Almacenamiento 256Gb / RAM 4 Gb. Camara frontal 12Mp / trasera 12Mp. NFC. USB-C. Bluetooth 5.0. Sistema operativo iOS 15. WiFi 802.11ax (6tagen.) con MIMO2x2. Radio. Graba y reproduce video. GPS. Navegador: Chrome. Un gran salto en la duracion de la bateria. Pantalla Super Retina XDR. Diseno resistente con ceramic shield. Mejores fotos y videos con poca luz. Modo cine con baja profundidad de campo y cambios de enfoque automaticos.",
+        "category": "celulares",
+        "stock": 1
     },
     {
-        "id": 2,
+        "id": 1,
         "title": "SAMSUNG S23 ULTRA",
         "image": "https://medias.musimundo.com/medias/size515-148065-02.jpg?context=bWFzdGVyfGltYWdlc3wzMTUwM3xpbWFnZS9qcGVnfGhmNS9oZGEvMTA0NjYyNDgyMjg4OTQvc2l6ZTUxNV8xNDgwNjVfMDIuanBnfDAzODg3NDY0MTBlODg2MmQ1ZGQ1MjY4Y2E4MmRmNDRhMTM1MDU0NjkwNGRkZDU0NzYxMTUzNTFlYTFlYjk2Y2M",
         "price": 485999,
-        "description": "Celular. Pantalla 6.8 FHD+ Dynamic AMOLED 16M colores. Almacenamiento: 256 Gb. Memoria RAM: 8 Gb. Camara Posterior: 200 MP + 10 MP + 12 MP. Camara Frontal: 12 MP. Bateria: 5000mAh. Puerto USB. Sincronizacion de PC. Identificador de llamadas. GPS. Glonass. Beidou. Sensor acelerometro. Sensor de huellas dactilares. Sensor giroscopico. Sensor geomagnetico. Sala de sensores. Sensor de luz. Sensor de proximidad. Mensajes de voz. Alarma. Reloj. Reproductor multimedia. Calculadora. Agenda. Correo electronico. Sonidos polifonicos."
+        "description": "Celular. Pantalla 6.8 FHD+ Dynamic AMOLED 16M colores. Almacenamiento: 256 Gb. Memoria RAM: 8 Gb. Camara Posterior: 200 MP + 10 MP + 12 MP. Camara Frontal: 12 MP. Bateria: 5000mAh. Puerto USB. Sincronizacion de PC. Identificador de llamadas. GPS. Glonass. Beidou. Sensor acelerometro. Sensor de huellas dactilares. Sensor giroscopico. Sensor geomagnetico. Sala de sensores. Sensor de luz. Sensor de proximidad. Mensajes de voz. Alarma. Reloj. Reproductor multimedia. Calculadora. Agenda. Correo electronico. Sonidos polifonicos.",
+        "category": "celulares",
+        "stock": 2
     },
     {
-        "id": 3,
+        "id": 2,
         "title": "MOTOROLA EDGE 30",
         "image": "https://medias.musimundo.com/medias/00559004-146602-146602-01-146602-01.jpg-size515?context=bWFzdGVyfGltYWdlc3w1ODc3MHxpbWFnZS9qcGVnfGg4Ny9oY2IvMTA0MTM0NTA3ODg4OTQvMDA1NTkwMDQtMTQ2NjAyLTE0NjYwMl8wMS0xNDY2MDJfMDEuanBnX3NpemU1MTV8MzIyNWNkM2Y0ZDhiOTI4NjUzZjk5Y2JkM2I4ZTZhZTgwN2MwMWZkOTVkY2RkNDUzZGZiYmYzNzI5YmNhODA1Zg",
         "price": 129999,
-        "description": "Celular con pantalla de 6.55 pulgadas pOLED. Resolucion 1080 x 2400 FHD+, 402, HiD, 144Hz. Procesador Octa core Qualcomm Snapdragon 778G+ (2.5 GHz). Camara Principal: 50MP (84) F1.8. Gran angular y macro: 13MP (120) F2.2. Profundidad: 2MP (80.1) F2.4. Zoom, digital (8x picture / 6x video). Flash Dual LED / Camara frontal 32Mp. Flash frontal backlight. Capacidad 128 Gb / RAM 8 Gb. Sensores: acelerometro, de proximidad, brujula (campo magnetico), giroscopio, huella dactilar, luz ambiente, desbloqueo facial. Redes Wi Fi 802.11 a/b/g/n/ac/ax/k/v/r/u - WIFI6E, bandas 2,4 , 5 y 6 GHz. Bluetooth 5.2. NFC. GPS, AGPS, GLONASS, Galileo. Redes 5G. Conector USB C version 2.0. Vidrio de pantalla 2.5D. Bateria 4020 mAh."
+        "description": "Celular con pantalla de 6.55 pulgadas pOLED. Resolucion 1080 x 2400 FHD+, 402, HiD, 144Hz. Procesador Octa core Qualcomm Snapdragon 778G+ (2.5 GHz). Camara Principal: 50MP (84) F1.8. Gran angular y macro: 13MP (120) F2.2. Profundidad: 2MP (80.1) F2.4. Zoom, digital (8x picture / 6x video). Flash Dual LED / Camara frontal 32Mp. Flash frontal backlight. Capacidad 128 Gb / RAM 8 Gb. Sensores: acelerometro, de proximidad, brujula (campo magnetico), giroscopio, huella dactilar, luz ambiente, desbloqueo facial. Redes Wi Fi 802.11 a/b/g/n/ac/ax/k/v/r/u - WIFI6E, bandas 2,4 , 5 y 6 GHz. Bluetooth 5.2. NFC. GPS, AGPS, GLONASS, Galileo. Redes 5G. Conector USB C version 2.0. Vidrio de pantalla 2.5D. Bateria 4020 mAh.",
+        "category": "celulares",
+        "stock": 3
     },
     {
-        "id": 4,
+        "id": 3,
         "title": "SAMSUNG A03S",
         "image": "https://medias.musimundo.com/medias/00417142-144173-144173-01-144173-01.jpg-size515?context=bWFzdGVyfGltYWdlc3w4MDA5N3xpbWFnZS9qcGVnfGgyNC9oY2EvMTAzMjMzNzY0MzkzMjYvMDA0MTcxNDItMTQ0MTczLTE0NDE3M18wMS0xNDQxNzNfMDEuanBnX3NpemU1MTV8ZDNkYmI3NmEwMTM1OTU4YzFhMjE4NzU3MTAyNGQ2MGU5Y2E3NGMyYzM5ZDUzMTAxMDYwYTRhNDVjNWM2NWM1MQ",
         "price": 53999,
-        "description": "Celular. Pantalla: Infinity-V Display de 6.5 pulgadas HD+ TFT. Triple Camara trasera de 13 MP + 2 (M) MP + 2 (D) MP. Camara Frontal de 5MP. Bateria: 5.000 mAh para mayor duracion de la bateria y 7.75W Fast charging. Memoria RAM de 4GB y 64GB de almacenamiento interno. Expandible hasta 1TB con tarjeta microSD. Sonido potente con Dobly Atmos (con Auriculares). Procesador MTK6765 Octa-core 2.3Ghz. Grabacion de video FHD. SO: Android.GPS. Navegador: Chrome.Desbloqueo Side Fingerprint / Reconocimiento Facial. Incluye Auriculares. USB tipo C. Bluetooth. Radio."
+        "description": "Celular. Pantalla: Infinity-V Display de 6.5 pulgadas HD+ TFT. Triple Camara trasera de 13 MP + 2 (M) MP + 2 (D) MP. Camara Frontal de 5MP. Bateria: 5.000 mAh para mayor duracion de la bateria y 7.75W Fast charging. Memoria RAM de 4GB y 64GB de almacenamiento interno. Expandible hasta 1TB con tarjeta microSD. Sonido potente con Dobly Atmos (con Auriculares). Procesador MTK6765 Octa-core 2.3Ghz. Grabacion de video FHD. SO: Android.GPS. Navegador: Chrome.Desbloqueo Side Fingerprint / Reconocimiento Facial. Incluye Auriculares. USB tipo C. Bluetooth. Radio.",
+        "category": "celulares",
+        "stock": 4
+    },
+    {
+        "id": 4,
+        "title": "BGH BS35WCCR",
+        "image": "https://medias.musimundo.com/medias/00197112-178032-178032-01.png-178032-01.png-size515?context=bWFzdGVyfGltYWdlc3wxOTU5NzR8aW1hZ2UvcG5nfGgzYS9oZWUvMTA0MjMyNDk1MzUwMDYvMDAxOTcxMTItMTc4MDMyLTE3ODAzMl8wMS5wbmctMTc4MDMyXzAxLnBuZ19zaXplNTE1fGQyMzg3MTgxZTliZTZhNjg4ZDdmMWQzODVhMWZiMTVhODVjOTllZmFkNWI5ZDM5MGZkYzk2NDY0MTRiM2EwZTI",
+        "price": 219999,
+        "description": "Split frio calor de 3450W. Timer. Funcion sleep. Filtro antibacterias. Deflector de aire movil. Funcion automatico. Funcion Deshunidificacion. Autolimpiante. Control de flujo vertical. Funcion ventil acion. Hot Start.Control remoto. EE: A",
+        "category": "aires",
+        "stock": 5
     }
 ]

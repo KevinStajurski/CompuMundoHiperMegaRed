@@ -9,9 +9,9 @@ export const NavBar = () => {
             <Link to={'/'}>
                 <img src={logo} alt="logo de la tienda" className='Logo' />
             </Link>
-            <Link to={'/'}>Mouse</Link>
-            <Link to={'/'}>Teclados</Link>
-            <Link to={'/'}>Auriculares</Link>
+            <Link to={'/category/celulares'}>Celulares</Link>
+            <Link to={'/category/aires'}>Aires</Link>
+            <Link to={'/category/televisores'}>Televisores</Link>
             <CartWidget/>
         </div>
     )
