@@ -12,7 +12,7 @@ export const ItemDetailContainer = () => {
   useEffect ( () => {
     pedirProductos()
     .then( (res) => {
-      setProp(res[idParam.id])
+      setProp(res.find(prod => prod.id === Number(idParam.id)))
     })
   }, [idParam])
 

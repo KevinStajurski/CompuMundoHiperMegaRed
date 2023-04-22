@@ -13,3 +13,8 @@
     width: 150px;
     height: 150px;
 }
+
+.link {
+    text-decoration: none;
+    color: black;
+}

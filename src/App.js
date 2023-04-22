@@ -1,6 +1,8 @@
 import { CartWidget } from './components/CartWidget/CartWidget';
 import { ItemDetailContainer } from './components/ItemDetailContainer/ItemDetailContainer';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
+import { Cart } from './components/Cart/Cart'
+import { CheckOut } from './components/Checkout/CheckOut';
 import { NavBar } from './components/NavBar/NavBar';
 import {
   BrowserRouter,
@@ -18,11 +20,11 @@ function App() {
             <CartWidget/>
           </NavBar>
         <Routes>
-          <Route path='/' element={<ItemListContainer/>}/>
-          <Route path='category/:category' element={<ItemListContainer/>}/>
-          <Route path='item/:id' element={<ItemDetailContainer/>}/>
-          {/* <Route path='cart' element={<Cart/>}/>
-          <Route path='checkout' element={<CheckOut/>}/> */}
+          <Route exact path='/' element={<ItemListContainer/>}/>
+          <Route exact path='category/:category' element={<ItemListContainer/>}/>
+          <Route exact path='item/:id' element={<ItemDetailContainer/>}/>
+          <Route exact path='cart' element={<Cart/>}/>
+          <Route exact path='checkout' element={<CheckOut/>}/>
           <Route path='*' element={<Navigate to = '/'/>}/>
         </Routes>
       </BrowserRouter>
