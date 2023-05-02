@@ -10,11 +10,20 @@ import {
   Route,
   Navigate
 } from "react-router-dom";
+import { CartContext } from './components/context/CartContext';
+import { useState } from 'react';
 
 
 function App() {
+  
+  const [cart, setCart] = useState([])
+  
+  const addTocart = (item) => {
+    setCart([...cart, item])
+  }
+  
   return (
-    <div>
+    <CartContext.Provider value={{addTocart}}>
       <BrowserRouter>
           <NavBar>
             <CartWidget/>
@@ -28,7 +37,7 @@ function App() {
           <Route path='*' element={<Navigate to = '/'/>}/>
         </Routes>
       </BrowserRouter>
-    </div>
+    </CartContext.Provider>
   );
 }
 
