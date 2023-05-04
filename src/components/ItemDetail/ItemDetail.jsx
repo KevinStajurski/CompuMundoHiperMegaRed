@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import { ItemCount } from '../ItemCount/ItemCount'
+import {CartContext} from '../context/CartContext'
 import './ItemDetail.css'
 
 export const ItemDetail = ({id, title, image, price, description, stock}) => {
@@ -16,16 +17,19 @@ export const ItemDetail = ({id, title, image, price, description, stock}) => {
   }
 
   //funcion de agregar al carrito
+  const {addToCart} = useContext(CartContext)
   const onAdd = () => {
-    const newItem = {
-      id,
-      title,
-      image,
-      price,
-      description,
-      counter
+    if (counter>0) {
+      const newItem = {
+        id,
+        title,
+        image,
+        price,
+        description,
+        counter
+      }
+      addToCart(newItem)
     }
-    console.log(newItem)
   }
 
   return (

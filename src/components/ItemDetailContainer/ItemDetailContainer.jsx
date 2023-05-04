@@ -18,7 +18,7 @@ export const ItemDetailContainer = () => {
 
   return (
     <div className='divItemDetailContainer'>
-      <ItemDetail {...prop}/>
+      {prop.id ? <ItemDetail {...prop}/> : <img src="https://i.gifer.com/YCZH.gif" alt="cargando"/>}
     </div>
   )
 }

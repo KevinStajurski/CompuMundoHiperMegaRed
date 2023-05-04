@@ -10,7 +10,7 @@ export const ItemCount = ({stock, counter, setCounter, onAdd}) => {
     
     const disminuir = () => {
         if (counter > 0) {
-            setCounter(counter - 1)
+            setCounter (counter - 1)
         }
     }
 
