@@ -4,16 +4,12 @@ import { ItemListContainer } from './components/ItemListContainer/ItemListContai
 import { Cart } from './components/Cart/Cart'
 import { CheckOut } from './components/Checkout/CheckOut';
 import { NavBar } from './components/NavBar/NavBar';
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Navigate
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { CartContext } from './components/context/CartContext';
 import { useState } from 'react';
 
 function App() {
+  //Array de carrito
   const [cart, setCart] = useState([])
   
   //Agrega producto al carrito
@@ -37,8 +33,13 @@ function App() {
     setCart(newCart)
   }
 
+  //Borra todo el carrito
+  const clearCart = () => {
+    setCart([])
+  }
+
   return (
-    <CartContext.Provider value={{addToCart, handleCartQty, handleTotalPrice, handleRemoveItem, cart}}>
+    <CartContext.Provider value={{addToCart, handleCartQty, handleTotalPrice, handleRemoveItem, cart, clearCart}}>
       <BrowserRouter>
           <NavBar>
             <CartWidget/>

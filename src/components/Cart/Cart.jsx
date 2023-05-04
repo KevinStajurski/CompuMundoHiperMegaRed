@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { CartContext } from '../context/CartContext'
 
 export const Cart = () => {
-  const { handleTotalPrice, handleRemoveItem, cart } = useContext(CartContext)
+  const { handleTotalPrice, handleRemoveItem, cart, clearCart } = useContext(CartContext)
   return (
     <div>
       <h1>Resumen de compras</h1>
@@ -13,6 +13,7 @@ export const Cart = () => {
           <button onClick={() => handleRemoveItem(prod.id)}>Eliminar</button>
         </div>
       ))}
+      <button onClick={clearCart}>Vaciar carrito</button>
       <strong>Total: $ {handleTotalPrice()}</strong>
     </div>
   )
