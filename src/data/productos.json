@@ -6,7 +6,7 @@
         "price": 651899,
         "description": "Celular de 6.1 pulgadas OLED. Procesador Chip A15 Bionic. Almacenamiento 256Gb / RAM 4 Gb. Camara frontal 12Mp / trasera 12Mp. NFC. USB-C. Bluetooth 5.0. Sistema operativo iOS 15. WiFi 802.11ax (6tagen.) con MIMO2x2. Radio. Graba y reproduce video. GPS. Navegador: Chrome. Un gran salto en la duracion de la bateria. Pantalla Super Retina XDR. Diseno resistente con ceramic shield. Mejores fotos y videos con poca luz. Modo cine con baja profundidad de campo y cambios de enfoque automaticos.",
         "category": "celulares",
-        "stock": 1
+        "stock": 0
     },
     {
         "id": 20,
@@ -15,7 +15,7 @@
         "price": 485999,
         "description": "Celular. Pantalla 6.8 FHD+ Dynamic AMOLED 16M colores. Almacenamiento: 256 Gb. Memoria RAM: 8 Gb. Camara Posterior: 200 MP + 10 MP + 12 MP. Camara Frontal: 12 MP. Bateria: 5000mAh. Puerto USB. Sincronizacion de PC. Identificador de llamadas. GPS. Glonass. Beidou. Sensor acelerometro. Sensor de huellas dactilares. Sensor giroscopico. Sensor geomagnetico. Sala de sensores. Sensor de luz. Sensor de proximidad. Mensajes de voz. Alarma. Reloj. Reproductor multimedia. Calculadora. Agenda. Correo electronico. Sonidos polifonicos.",
         "category": "celulares",
-        "stock": 2
+        "stock": 5
     },
     {
         "id": 30,
@@ -24,7 +24,7 @@
         "price": 129999,
         "description": "Celular con pantalla de 6.55 pulgadas pOLED. Resolucion 1080 x 2400 FHD+, 402, HiD, 144Hz. Procesador Octa core Qualcomm Snapdragon 778G+ (2.5 GHz). Camara Principal: 50MP (84) F1.8. Gran angular y macro: 13MP (120) F2.2. Profundidad: 2MP (80.1) F2.4. Zoom, digital (8x picture / 6x video). Flash Dual LED / Camara frontal 32Mp. Flash frontal backlight. Capacidad 128 Gb / RAM 8 Gb. Sensores: acelerometro, de proximidad, brujula (campo magnetico), giroscopio, huella dactilar, luz ambiente, desbloqueo facial. Redes Wi Fi 802.11 a/b/g/n/ac/ax/k/v/r/u - WIFI6E, bandas 2,4 , 5 y 6 GHz. Bluetooth 5.2. NFC. GPS, AGPS, GLONASS, Galileo. Redes 5G. Conector USB C version 2.0. Vidrio de pantalla 2.5D. Bateria 4020 mAh.",
         "category": "celulares",
-        "stock": 3
+        "stock": 5
     },
     {
         "id": 40,
@@ -33,7 +33,7 @@
         "price": 53999,
         "description": "Celular. Pantalla: Infinity-V Display de 6.5 pulgadas HD+ TFT. Triple Camara trasera de 13 MP + 2 (M) MP + 2 (D) MP. Camara Frontal de 5MP. Bateria: 5.000 mAh para mayor duracion de la bateria y 7.75W Fast charging. Memoria RAM de 4GB y 64GB de almacenamiento interno. Expandible hasta 1TB con tarjeta microSD. Sonido potente con Dobly Atmos (con Auriculares). Procesador MTK6765 Octa-core 2.3Ghz. Grabacion de video FHD. SO: Android.GPS. Navegador: Chrome.Desbloqueo Side Fingerprint / Reconocimiento Facial. Incluye Auriculares. USB tipo C. Bluetooth. Radio.",
         "category": "celulares",
-        "stock": 4
+        "stock": 5
     },
     {
         "id": 50,
@@ -60,7 +60,7 @@
         "price": 64999,
         "description": "Televisor Smart / Android. Pantalla: TV LED HD. Resolucion de panel: 1366 x 768 p. Relacion de aspecto: 16:9. Optimizacion de la imagen: HDR10, HLG (Hybrid Log Gamma), Pixel Plus alta definicion. Tamano diagonal de pantalla: 32 pulgadas / 80 cm. Cantidad de conexiones HDMI: 3. Cantidad de puertos USB: 2. WIFI. Bluetooth. Potencia de salida (RMS): 10 W. Configuracion del parlante: Altavoz de 5 W x2. Optimizacion del sonido: Nivelador automatico de volumen, Dialogo nitido, Dolby Atmos, Mejora de graves Dolby. Sistema operativo: Android TV 10 (Q). Aplicaciones preinstaladas: YouTube, Amazon, Prime Video, Apple TV, Disney+, Aplicacion de fitness, Google Play Movies, Google Play Music, Busqueda de Google, Netflix, YouTube Music. Tamano de la memoria (flash): 8 GB. Control por voz con IA: Presiona un boton del control remoto para hablar con el Asistente de Google. Controla el televisor o los dispositivos inteligentes para el hogar compatibles con el Asistente de Google usando tu voz.",
         "category": "televisores",
-        "stock": 4
+        "stock": 5
     },
     {
         "id": 80,
@@ -69,7 +69,7 @@
         "price": 58999,
         "description": "Televisor LED 32 pulgadas HD. Frecuencia de barrido 60 Hz. Potencia RMS 10W. Resolucion 1366 x 768. Salida de audio. Wi Fi. Entrada video componente y compuesto. USB 2 x 2.0. 3 HDMI. Contraste dinamico..",
         "category": "televisores",
-        "stock": 2
+        "stock": 5
     },
     {
         "id": 90,
@@ -78,6 +78,6 @@
         "price": 57999,
         "description": "Tv Smart andriod de 32 pulgadas HD (1366x768). Frecuencia de barrido 60Hz. Radio de contraste 3000:01. Brillo 220 CD/M2. 2 Salidas de audio. Bluetooth 5.0. 2.4GHz Wi-Fi 802.11 b/g/n 2T2R. Sintonizador TDA. 1 Entrada USB. 2 Entradas HDMI. 1 AV-IN. 1 LAN. 1 Antena/cable. 1 Salida para auricular. 1 SPDIF optica (audio digital). Tipo de sonido Dolby audio MS12Y. Tecnologia Android R. Control por voz al control remoto. Almacenamiento RAM 1 Gb / ROM 8 Gb. Eficiencia energetica clase A. Dimensiones con soporte (alt-anch-prof) 47.5x72.4x18cm.",
         "category": "televisores",
-        "stock": 2
+        "stock": 5
     }
 ]

@@ -10,9 +10,9 @@ export const CartContextProvider = ({ children }) => {
     const [cart, setCart] = useState(init)
 
     //Local storage
-    useEffect (()=>{
-        localStorage.setItem('cart',JSON.stringify(cart))
-    },[cart])
+    useEffect(() => {
+        localStorage.setItem('cart', JSON.stringify(cart))
+    }, [cart])
 
     //Agrega producto al carrito
     const addItem = (item) => {
@@ -20,7 +20,7 @@ export const CartContextProvider = ({ children }) => {
     }
 
     //Calcula la cantidad de productos en el carrito
-    const cartQty = () => {
+    const calcItemsQty = () => {
         return cart.reduce((accumulator, currentValue) => accumulator + currentValue.counter, 0)
     }
 
@@ -42,11 +42,14 @@ export const CartContextProvider = ({ children }) => {
 
     //Consulta si el producto a agregar ya se encuentra en el carrito
     const isInCart = (id) => {
+        return (
+            cart.some(item => item.id === id)
+        )
     }
 
     return (
-        <CartContext.Provider value={{addItem, cartQty, totalPrice, removeItem, cart, clear}}>
-            { children }
+        <CartContext.Provider value={{ addItem, calcItemsQty, totalPrice, removeItem, cart, clear, isInCart }}>
+            {children}
         </CartContext.Provider>
     )
 }

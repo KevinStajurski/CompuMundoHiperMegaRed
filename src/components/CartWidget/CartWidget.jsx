@@ -5,13 +5,13 @@ import { CartContext } from '../context/CartContext';
 import "./CartWidget.css"
 
 export const CartWidget = () => {
-    const {cartQty} = useContext (CartContext)
+    const {calcItemsQty} = useContext (CartContext)
     return (
         <div className='divCart'>
             <Link to={"/cart"}>
                 <BiCart className='cartIcon'/>
             </Link>
-            <span className='cantidadCarrito'>{cartQty()}</span>
+            <span className='cantidadCarrito'>{calcItemsQty()}</span>
         </div>
     )
 }
