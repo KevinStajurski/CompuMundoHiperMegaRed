@@ -32,6 +32,9 @@ export const ItemDetail = ({id, title, image, price, description, stock}) => {
     }
   }
 
+  //Buscar el indice del producto en el cart y aumentar el counter
+  //cart[(cart.findIndex(prod => prod.id === id))].counter++
+
   return (
     <div className='divItemDetail'>
       <h2>{title}</h2>
