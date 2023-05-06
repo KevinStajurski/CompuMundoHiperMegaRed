@@ -5,11 +5,11 @@ import { Cart } from './components/Cart/Cart'
 import { CheckOut } from './components/Checkout/CheckOut';
 import { NavBar } from './components/NavBar/NavBar';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { CartProvider } from './components/context/CartContext';
+import { CartContextProvider } from './components/context/CartContext';
 
 function App() {
   return (
-    <CartProvider>
+    <CartContextProvider>
       <BrowserRouter>
           <NavBar>
             <CartWidget/>
@@ -23,7 +23,7 @@ function App() {
           <Route path='*' element={<Navigate to = '/'/>}/>
         </Routes>
       </BrowserRouter>
-    </CartProvider>
+    </CartContextProvider>
   );
 }
 

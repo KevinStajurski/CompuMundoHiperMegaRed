@@ -17,7 +17,7 @@ export const ItemDetail = ({id, title, image, price, description, stock}) => {
   }
 
   //funcion de agregar al carrito
-  const {addToCart} = useContext(CartContext)
+  const {addItem} = useContext(CartContext)
   const onAdd = () => {
     if (counter>0) {
       const newItem = {
@@ -28,7 +28,7 @@ export const ItemDetail = ({id, title, image, price, description, stock}) => {
         description,
         counter
       }
-      addToCart(newItem)
+      addItem(newItem)
     }
   }
 
