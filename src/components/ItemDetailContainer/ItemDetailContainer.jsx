@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import { ItemDetail } from '../ItemDetail/ItemDetail'
 import { pedirProductos } from '../pedirProductos'
-import './ItemDetailContainer.css'
 import { useParams } from 'react-router-dom'
+import './ItemDetailContainer.css'
 
 export const ItemDetailContainer = () => {
-  
+  //variable que almacena los datos del producto
   const [prop, setProp] = useState({})
+
+  //idParam almacena la ruta obtenida por el hook useParams
   const idParam = useParams()
 
   useEffect ( () => {

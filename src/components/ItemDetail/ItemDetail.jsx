@@ -1,34 +1,40 @@
 import React, { useContext, useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import { ItemCount } from '../ItemCount/ItemCount'
-import {CartContext} from '../context/CartContext'
+import { CartContext } from '../context/CartContext'
 import './ItemDetail.css'
 
-export const ItemDetail = ({id, title, image, price, description, stock}) => {
-  //contador de la cantidad del item a agregar
-  const [counter, setCounter] = useState(0)
-  
-  //variable para navegacion
+export const ItemDetail = ({ id, title, image, price, description, stock }) => {
+
+  //Variable para navegacion
   const navigate = useNavigate()
-  
-  //funcion del boton volver del detalle del item
-  const volver = () => {
+
+  //Funcion del boton volver del detalle del item
+  const back = () => {
     navigate(-1)
   }
 
-  //funcion de agregar al carrito
-  const {addItem} = useContext(CartContext)
+  //Contador de la cantidad del item a agregar
+  const [counter, setCounter] = useState(1)
+  
+  //Funcion traida del contexto para agregar el producto al carrito
+  const { addItem } = useContext(CartContext)
+  
+  //Funcion para crear el producto con la cantidad
   const onAdd = () => {
-    if (counter>0) {
+    if (stock > 0) {
       const newItem = {
         id,
         title,
         image,
         price,
         description,
+        stock,
         counter
       }
       addItem(newItem)
+    } else {
+      alert("No hay stock")
     }
   }
 
@@ -38,14 +44,16 @@ export const ItemDetail = ({id, title, image, price, description, stock}) => {
   return (
     <div className='divItemDetail'>
       <h2>{title}</h2>
-      <img src={image} alt={title}/>
-      <p>$ {price}</p>
-      <p>{description}</p>
-      <ItemCount stock={stock} counter={counter} setCounter={setCounter} onAdd={onAdd}/>
+      <img src={image} alt={title} />
+      <p>Precio: $ {price}</p>
+      <p>Descripcion: {description}</p>
+      <p>ID: {id}</p>
+      <p>Stock: {stock}</p>
+      <ItemCount stock={stock} onAdd={onAdd} counter={counter} setCounter={setCounter} />
       <Link to={'/cart'}>
         <button>Finalizar compra</button>
       </Link>
-      <button onClick={volver}>Volver</button>
+      <button onClick={back}>Volver</button>
     </div>
   )
 }
