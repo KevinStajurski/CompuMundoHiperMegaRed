@@ -10,7 +10,9 @@ export const Cart = () => {
       {cart.length === 0 ?
         <>
           <h1>Carrito vacio</h1>
-          <Link to={'/'}>Ver Productos</Link>
+          <Link to={'/'}>
+            <button>Ver Productos</button>
+          </Link>
         </> :
         <>
           <div>
@@ -19,7 +21,7 @@ export const Cart = () => {
               <div>
                 <p>Nombre: {prod.title}</p>
                 <p>Cantidad: {prod.counter}</p>
-                <img src={prod.image} alt={prod.title} className='img'/>
+                <img src={prod.image} alt={prod.title} className='img' />
                 <button onClick={() => removeItem(prod.id)}>Eliminar</button>
                 <hr />
               </div>
