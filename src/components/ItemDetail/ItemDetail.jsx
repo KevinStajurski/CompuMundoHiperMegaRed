@@ -17,8 +17,8 @@ export const ItemDetail = ({ id, title, image, price, description, stock }) => {
   //Contador de la cantidad del item a agregar
   const [counter, setCounter] = useState(1)
   
-  //Funcion traida del contexto para agregar el producto al carrito
-  const { addItem } = useContext(CartContext)
+  //Funciones traidas del contexto. addItem: agrega el producto al carrito - isInCart: devuelve true si el producto ya esta en el carrito
+  const { addItem, isInCart } = useContext(CartContext)
   
   //Funcion para crear el producto con la cantidad
   const onAdd = () => {
@@ -49,7 +49,7 @@ export const ItemDetail = ({ id, title, image, price, description, stock }) => {
       <p>Descripcion: {description}</p>
       <p>ID: {id}</p>
       <p>Stock: {stock}</p>
-      <ItemCount stock={stock} onAdd={onAdd} counter={counter} setCounter={setCounter} />
+      {isInCart(id) ? <p>Producto agregado</p> :  <ItemCount stock={stock} onAdd={onAdd} counter={counter} setCounter={setCounter}/>}
       <Link to={'/cart'}>
         <button>Finalizar compra</button>
       </Link>

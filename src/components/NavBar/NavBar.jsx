@@ -1,10 +1,13 @@
 import React from 'react'
 import logo from '../../logo.png'
-import "./NavBar.css"
 import { CartWidget } from '../CartWidget/CartWidget'
 import { Link } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
+import { useContext } from 'react'
+import { CartContext } from '../context/CartContext'
+import "./NavBar.css"
 export const NavBar = () => {
+    const {cart} = useContext(CartContext)
     return (
         <div className='NavBar'>
             <Link to={'/'}>
@@ -14,7 +17,7 @@ export const NavBar = () => {
             <NavLink to={'/category/celulares'} activeClassName="active" className="inactive">Celulares</NavLink>
             <NavLink to={'/category/aires'} activeClassName="active" className="inactive">Aires</NavLink>
             <NavLink to={'/category/televisores'} activeClassName="active" className="inactive">Televisores</NavLink>
-            <CartWidget/>
+            {cart.length!==0 && <CartWidget/>}
         </div>
     )
 }
