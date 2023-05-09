@@ -51,7 +51,7 @@ export const ItemDetail = ({ id, title, image, price, description, stock }) => {
       <p>Stock: {stock}</p>
       {isInCart(id) ?
         <Link to={'/cart'}>
-          <button>Finalizar compra</button>
+          <button>Terminar mi compra</button>
         </Link> :
         <ItemCount stock={stock} onAdd={onAdd} counter={counter} setCounter={setCounter} />}
       <button onClick={back}>Volver</button>

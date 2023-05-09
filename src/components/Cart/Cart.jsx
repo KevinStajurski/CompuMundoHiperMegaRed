@@ -15,10 +15,10 @@ export const Cart = () => {
           </Link>
         </> :
         <>
-          <div>
+          <div className='div'>
             <h1>Resumen de compras</h1>
             {cart.map((prod) => (
-              <div>
+              <div className='div'>
                 <p>Nombre: {prod.title}</p>
                 <p>Cantidad: {prod.counter}</p>
                 <img src={prod.image} alt={prod.title} className='img' />

@@ -4,12 +4,12 @@ export const ItemCount = ({ stock, onAdd, counter, setCounter }) => {
 
     //Funcion de incrementar el contador
     const increase = () => {
-        counter < stock && setCounter (counter + 1)
+        counter < stock && setCounter(counter + 1)
     }
 
     //Funcion de decrementar el contador
     const decrease = () => {
-        counter > 1 && setCounter (counter -1)
+        counter > 1 && setCounter(counter - 1)
     }
 
     return (
