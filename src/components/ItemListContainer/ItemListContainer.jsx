@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { ItemList } from '../ItemList/ItemList'
-import { getItem } from '../getItem'
+// import { getItem } from '../getItem'
 import { useParams } from 'react-router-dom'
 import { getFirestore } from '../../firebase/config'
 import "./ItemListContainer.css"
 
 export const ItemListContainer = () => {
     //Array para almacenar los productos
-    const [productos, setProductos] = useState([])
+    const [items, setItems] = useState([])
     //categoryParams almacena la categoria de la ruta obtenida por el hook useParams
     const categoryParam = useParams()
 
@@ -24,22 +24,34 @@ export const ItemListContainer = () => {
     // }, [categoryParam])
 
     //Obtener datos de firebase
-    useEffect(()=>{
+    useEffect(() => {
         const db = getFirestore()
         const productos = db.collection('productos')
-        productos.get()
-        .then((res)=>{
-            const newItem = res.docs.map((doc)=>{
-                return {id: doc.id, ...doc.data()}
-            })
-            console.table(newItem)
-            setProductos(newItem)
-        })
-    },[])
+        if (categoryParam.category) {
+            const filtrados = productos.where("category", "==", categoryParam.category)
+            filtrados.get()
+                .then((res) => {
+                    const newItem = res.docs.map((doc) => {
+                        return { id: doc.id, ...doc.data() }
+                    })
+                    setItems(newItem)
+                })
+                .catch((error) => console.log(error))
+        } else {
+            productos.get()
+                .then((res) => {
+                    const newItem = res.docs.map((doc) => {
+                        return { id: doc.id, ...doc.data() }
+                    })
+                    setItems(newItem)
+                })
+                .catch((error) => console.log(error))
+        }
+    }, [categoryParam])
 
     return (
         <div>
-            {productos.length === 0 ? <img src="https://i.gifer.com/YCZH.gif" alt="cargando" /> : <ItemList productos={productos} />}
+            {items ? <ItemList productos={items}/> : <img src="https://i.gifer.com/YCZH.gif" alt="cargando" />}
         </div>
     )
 }
