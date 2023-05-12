@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { ItemDetail } from '../ItemDetail/ItemDetail'
-// import { getItem } from '../getItem'
 import { getFirestore } from '../../firebase/config'
 import { useParams } from 'react-router-dom'
 import './ItemDetailContainer.css'
@@ -11,14 +10,6 @@ export const ItemDetailContainer = () => {
 
   //idParam almacena el ID de la ruta obtenida por el hook useParams
   const idParam = useParams()
-
-  //Obtener datos de un producto según su ID
-  // useEffect(() => {
-  //   getItem()
-  //     .then((res) => {
-  //       setProp(res.find(prod => prod.id === Number(idParam.id)))
-  //     })
-  // }, [idParam])
 
   //Obtener los datos desde firestore
   useEffect(() => {
