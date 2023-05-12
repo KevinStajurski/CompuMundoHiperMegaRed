@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { ItemDetail } from '../ItemDetail/ItemDetail'
-import { getItem } from '../getItem'
+// import { getItem } from '../getItem'
+import { getFirestore } from '../../firebase/config'
 import { useParams } from 'react-router-dom'
 import './ItemDetailContainer.css'
 
@@ -12,10 +13,23 @@ export const ItemDetailContainer = () => {
   const idParam = useParams()
 
   //Obtener datos de un producto según su ID
+  // useEffect(() => {
+  //   getItem()
+  //     .then((res) => {
+  //       setProp(res.find(prod => prod.id === Number(idParam.id)))
+  //     })
+  // }, [idParam])
+
+  //Obtener los datos desde firestore
   useEffect(() => {
-    getItem()
+    const db = getFirestore()
+    const products = db.collection('productos')
+    const item = products.doc(idParam.id)
+    item.get()
       .then((res) => {
-        setProp(res.find(prod => prod.id === Number(idParam.id)))
+        setProp({
+          id: res.id, ...res.data()
+        })
       })
   }, [idParam])
 

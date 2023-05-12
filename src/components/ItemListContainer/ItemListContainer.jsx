@@ -26,32 +26,22 @@ export const ItemListContainer = () => {
     //Obtener datos de firebase
     useEffect(() => {
         const db = getFirestore()
-        const productos = db.collection('productos')
-        if (categoryParam.category) {
-            const filtrados = productos.where("category", "==", categoryParam.category)
-            filtrados.get()
-                .then((res) => {
-                    const newItem = res.docs.map((doc) => {
-                        return { id: doc.id, ...doc.data() }
-                    })
-                    setItems(newItem)
+        const products = categoryParam.category
+            ? db.collection('productos').where('category', '==', categoryParam.category)
+            : db.collection('productos')
+        products.get()
+            .then((res) => {
+                const newItem = res.docs.map((doc) => {
+                    return { id: doc.id, ...doc.data() }
                 })
-                .catch((error) => console.log(error))
-        } else {
-            productos.get()
-                .then((res) => {
-                    const newItem = res.docs.map((doc) => {
-                        return { id: doc.id, ...doc.data() }
-                    })
-                    setItems(newItem)
-                })
-                .catch((error) => console.log(error))
-        }
+                setItems(newItem)
+            })
+            .catch((error) => console.log(error))
     }, [categoryParam])
 
     return (
         <div>
-            {items ? <ItemList productos={items}/> : <img src="https://i.gifer.com/YCZH.gif" alt="cargando" />}
+            {items ? <ItemList productos={items} /> : <img src="https://i.gifer.com/YCZH.gif" alt="cargando" />}
         </div>
     )
 }
