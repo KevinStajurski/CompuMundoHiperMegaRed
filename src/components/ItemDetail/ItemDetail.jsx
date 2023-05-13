@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react'
 import { useNavigate, Link } from 'react-router-dom'
 import { ItemCount } from '../ItemCount/ItemCount'
 import { CartContext } from '../context/CartContext'
+import Swal from 'sweetalert2'
 import './ItemDetail.css'
 
 export const ItemDetail = ({ id, title, image, price, description, stock }) => {
@@ -34,7 +35,7 @@ export const ItemDetail = ({ id, title, image, price, description, stock }) => {
       }
       addItem(newItem)
     } else {
-      alert("No hay stock")
+      Swal.fire('Producto sin stock!')
     }
   }
 
