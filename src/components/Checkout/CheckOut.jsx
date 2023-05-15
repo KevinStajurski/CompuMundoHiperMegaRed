@@ -7,6 +7,7 @@ import 'firebase/firestore'
 import Swal from 'sweetalert2'
 
 export const CheckOut = () => {
+
   const { totalPrice, clear, cart } = useContext(CartContext)
   const [email, setEmail] = useState("")
   const [name, setName] = useState("")
@@ -15,10 +16,6 @@ export const CheckOut = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log("Email: ", email)
-    console.log("Nombre: ", name)
-    console.log("Apellido: ", lastname)
-    console.log("Teléfono: ", phone)
     const order = {
       buyer: {
         email,
@@ -28,9 +25,9 @@ export const CheckOut = () => {
       },
       items: cart,
       total: totalPrice(),
-      data: firebase.firestore.Timestamp.fromDate(new Date())
+      date: firebase.firestore.Timestamp.fromDate(new Date())
     }
-    console.log(order)
+
     //Funcion para enviar la orden a firebase
     const db = getFirestore()
     const orders = db.collection('ordenes')
@@ -45,8 +42,18 @@ export const CheckOut = () => {
           }
         })
       })
-  }
 
+    //Funcion para actualizar cantidades en firebase
+    cart.forEach(item => {
+      const docRef = db.collection('productos').doc(item.id)
+      docRef.get()
+        .then((doc) => {
+          docRef.update({
+            stock: doc.data().stock - item.counter
+          })
+        })
+    })
+  }
 
   return (
     <div>
