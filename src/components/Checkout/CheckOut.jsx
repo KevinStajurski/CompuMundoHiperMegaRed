@@ -5,6 +5,7 @@ import { getFirestore } from '../../firebase/config'
 import firebase from 'firebase'
 import 'firebase/firestore'
 import Swal from 'sweetalert2'
+import "./CheckOut.css"
 
 export const CheckOut = () => {
 
@@ -63,8 +64,7 @@ export const CheckOut = () => {
   return (
     <div>
       <h3>Procesar compra</h3>
-      <hr />
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className='form'>
         <input type="email" placeholder='Ingrese su email' onChange={(e) => setEmail(e.target.value)} value={email} />
         <input type="text" placeholder='Ingrese su nombre' onChange={(e) => setName(e.target.value)} value={name} />
         <input type="text" placeholder='Ingrese su apellido' onChange={(e) => setLastname(e.target.value)} value={lastname} />

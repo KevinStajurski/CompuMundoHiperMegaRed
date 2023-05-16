@@ -8,7 +8,7 @@ export const Cart = () => {
   const { totalPrice, removeItem, cart, clear } = useContext(CartContext)
 
   return (
-    <div>
+    <div className='divContainer'>
       {cart.length === 0 ?
         <>
           <h1>Carrito vacio</h1>
@@ -17,15 +17,16 @@ export const Cart = () => {
           </Link>
         </> :
         <>
-          <div className='div'>
+          <div>
             <h1>Resumen de compras</h1>
             {cart.map((prod) => (
-              <div className='div'>
-                <p>Nombre: {prod.title}</p>
+              <div className='divItem'>
+                <p>{prod.title}</p>
                 <p>Cantidad: {prod.counter}</p>
+                <p>Precio unitario: $ {prod.price}</p>
+                <p>Precio total: $ {prod.price*prod.counter}</p>
                 <img src={prod.image} alt={prod.title} className='img' />
                 <button onClick={() => removeItem(prod.id)}>Eliminar</button>
-                <hr />
               </div>
             ))}
             <button onClick={clear}>Vaciar carrito</button>
