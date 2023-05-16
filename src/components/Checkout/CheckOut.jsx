@@ -42,7 +42,7 @@ export const CheckOut = () => {
           title: 'Compra realizada con exito!',
           text: `Guarde su número de compra: ${res.id}`,
           willClose: () => {
-            clear()
+            clear(res.id)
           }
         })
       })

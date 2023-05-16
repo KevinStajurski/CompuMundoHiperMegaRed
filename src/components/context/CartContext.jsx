@@ -37,20 +37,24 @@ export const CartContextProvider = ({ children }) => {
     }
 
     //Borra todo el carrito
-    const clear = () => {
-        Swal.fire({
-            title: 'Desea vaciar el carrito?',
-            showDenyButton: true,
-            showCancelButton: false,
-            confirmButtonText: 'Si',
-            denyButtonText: `No`,
-        }).then((result) => {
-            /* Read more about isConfirmed, isDenied below */
-            if (result.isConfirmed) {
-                Swal.fire('Carrito vaciado', '', 'success')
+    const clear = (res) => {
+        res.length > 0
+            ?
                 setCart([])
-            }
-        })
+            :
+            Swal.fire({
+                title: 'Desea vaciar el carrito?',
+                showDenyButton: true,
+                showCancelButton: false,
+                confirmButtonText: 'Si',
+                denyButtonText: `No`,
+            }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                    Swal.fire('Carrito vaciado', '', 'success')
+                    setCart([])
+                }
+            })
     }
 
     //Consulta si el producto a agregar ya se encuentra en el carrito
