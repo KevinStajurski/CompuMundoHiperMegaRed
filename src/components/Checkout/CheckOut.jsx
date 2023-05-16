@@ -8,12 +8,16 @@ import Swal from 'sweetalert2'
 
 export const CheckOut = () => {
 
+  //Funciones traidas del contexto. totalPrice: calcula el precio total del carrito - clear: limpia el carrito - cart: arreglo del carrito
   const { totalPrice, clear, cart } = useContext(CartContext)
+  
+  //Variables para almacenar datos del usuario
   const [email, setEmail] = useState("")
   const [name, setName] = useState("")
   const [lastname, setLastname] = useState("")
   const [phone, setPhone] = useState("")
 
+  //Submit del formulario de datos del comprador
   const handleSubmit = (e) => {
     e.preventDefault()
     const order = {

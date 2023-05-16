@@ -40,22 +40,26 @@ export const ItemDetail = ({ id, title, image, price, description, stock }) => {
   }
 
   return (
-    <div className='divItemDetail'>
-      <h2>{title}</h2>
-      <img src={image} alt={title} />
-      <p>Precio: $ {price}</p>
-      <p>Descripcion: {description}</p>
-      <p>ID: {id}</p>
-      <p>Stock: {stock}</p>
-      {isInCart(id) ? <>
-        <p>El producto ya se encuentra en el carrito</p>
-        <Link to={'/cart'}>
-          <button>Terminar mi compra</button>
-        </Link>
-      </> :
-        <ItemCount stock={stock} onAdd={onAdd} counter={counter} setCounter={setCounter} />
+    <>
+      {!title ? <h1>El producto no existe!</h1> :
+        <div className='divItemDetail'>
+          <h2>{title}</h2>
+          <img src={image} alt={title} />
+          <p>Precio: $ {price}</p>
+          <p>Descripcion: {description}</p>
+          <p>ID: {id}</p>
+          <p>Stock: {stock}</p>
+          {isInCart(id) ? <>
+            <p>El producto ya se encuentra en el carrito</p>
+            <Link to={'/cart'}>
+              <button>Terminar mi compra</button>
+            </Link>
+          </> :
+            <ItemCount stock={stock} onAdd={onAdd} counter={counter} setCounter={setCounter} />
+          }
+          <button onClick={back}>Volver</button>
+        </div>
       }
-      <button onClick={back}>Volver</button>
-    </div>
+    </>
   )
 }
