@@ -34,6 +34,13 @@ export const ItemDetail = ({ id, title, image, price, description, stock }) => {
         counter
       }
       addItem(newItem)
+      Swal.fire({
+        position: 'top-end',
+        icon: 'success',
+        title: 'Producto agregado',
+        showConfirmButton: false,
+        timer: 1500
+      })
     } else {
       Swal.fire('Producto sin stock!')
     }

@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import Swal from 'sweetalert2'
 
 export const CartContext = createContext()
 
@@ -37,7 +38,19 @@ export const CartContextProvider = ({ children }) => {
 
     //Borra todo el carrito
     const clear = () => {
-        setCart([])
+        Swal.fire({
+            title: 'Desea vaciar el carrito?',
+            showDenyButton: true,
+            showCancelButton: false,
+            confirmButtonText: 'Si',
+            denyButtonText: `No`,
+        }).then((result) => {
+            /* Read more about isConfirmed, isDenied below */
+            if (result.isConfirmed) {
+                Swal.fire('Carrito vaciado', '', 'success')
+                setCart([])
+            }
+        })
     }
 
     //Consulta si el producto a agregar ya se encuentra en el carrito
