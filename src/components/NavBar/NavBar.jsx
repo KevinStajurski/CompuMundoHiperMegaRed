@@ -9,7 +9,7 @@ import "./NavBar.css"
 export const NavBar = () => {
 
     const { cart } = useContext(CartContext)
-    
+
     return (
         <div className='NavBar'>
             <Link to={'/'}>

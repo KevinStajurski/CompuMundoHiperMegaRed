@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 import './Cart.css'
 
 export const Cart = () => {
-  
+
   const { totalPrice, removeItem, cart, clear } = useContext(CartContext)
-  
+
   return (
     <div>
       {cart.length === 0 ?

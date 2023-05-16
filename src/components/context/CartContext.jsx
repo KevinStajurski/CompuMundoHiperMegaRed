@@ -40,7 +40,7 @@ export const CartContextProvider = ({ children }) => {
     const clear = (res) => {
         res.length > 0
             ?
-                setCart([])
+            setCart([])
             :
             Swal.fire({
                 title: 'Desea vaciar el carrito?',

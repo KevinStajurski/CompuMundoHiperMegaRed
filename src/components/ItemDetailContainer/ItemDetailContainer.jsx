@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom'
 import './ItemDetailContainer.css'
 
 export const ItemDetailContainer = () => {
-  
+
   //Variable para almacenar los datos del producto
   const [prop, setProp] = useState({})
 
