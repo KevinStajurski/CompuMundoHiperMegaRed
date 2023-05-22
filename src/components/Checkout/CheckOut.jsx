@@ -17,6 +17,7 @@ export const CheckOut = () => {
   const [name, setName] = useState("")
   const [lastname, setLastname] = useState("")
   const [phone, setPhone] = useState("")
+  const [secondEmail, setSecondEmail] = useState("")
 
   //Funcion que crea el objeto con los datos del comprador y los productos que agrego al carrito, los envia a firebase y recorre la db actualizando stocks
   const handleSubmit = (e) => {
@@ -66,10 +67,11 @@ export const CheckOut = () => {
       <h3>Procesar compra</h3>
       <form onSubmit={handleSubmit} className='form'>
         <input type="email" placeholder='Ingrese su email' onChange={(e) => setEmail(e.target.value)} value={email} />
+        <input type="email" placeholder='Reingrese su email' onChange={(e) => setSecondEmail(e.target.value)} value={secondEmail} />
         <input type="text" placeholder='Ingrese su nombre' onChange={(e) => setName(e.target.value)} value={name} />
         <input type="text" placeholder='Ingrese su apellido' onChange={(e) => setLastname(e.target.value)} value={lastname} />
         <input type="text" placeholder='Ingrese su número de teléfono' onChange={(e) => setPhone(e.target.value)} value={phone} />
-        <button type='submit'>Finalizar compra</button>
+        {secondEmail === email && secondEmail !== "" ? <button type='submit'>Finalizar compra</button> : <button disabled={true}>Finalizar compra</button>}
         <Link to={'/cart'}>
           <button>Volver al carrito</button>
         </Link>
